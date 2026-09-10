@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cj856h5eoqbe1"
+path="res://.godot/imported/th - 9_10_26, 12.59 AM.wav-18c81759ac0d714c3b18f19c6834cc4a.sample"
+
+[deps]
+
+source_file="res://th - 9_10_26, 12.59 AM.wav"
+dest_files=["res://.godot/imported/th - 9_10_26, 12.59 AM.wav-18c81759ac0d714c3b18f19c6834cc4a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
