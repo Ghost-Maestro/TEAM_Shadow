@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://mn0awr7ve3ke"
-path="res://.godot/imported/Jingle.wav-2418fda1878a76af454c4c3b76ab933e.sample"
+uid="uid://u1o7dp3xxa87"
+path="res://.godot/imported/CritHit.wav-07069dbdfddad68f5782ad39868006bc.sample"
 
 [deps]
 
-source_file="res://SFX/Jingle.wav"
-dest_files=["res://.godot/imported/Jingle.wav-2418fda1878a76af454c4c3b76ab933e.sample"]
+source_file="res://Music SFX/CritHit.wav"
+dest_files=["res://.godot/imported/CritHit.wav-07069dbdfddad68f5782ad39868006bc.sample"]
 
 [params]
 

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://gewdk585n5ym"]
+
+[ext_resource type="AudioStream" uid="uid://d3mmqsxgxc4q8" path="res://Music SFX/Ex-nlBMashSFX.mp3" id="1_0mepm"]
+
+[node name="Audio Center" type="Node2D" unique_id=336868789]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1647326031]
+
+[node name="EX-NLBMash" type="AudioStreamPlayer" parent="." unique_id=873501196]
+stream = ExtResource("1_0mepm")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="." unique_id=189589020]

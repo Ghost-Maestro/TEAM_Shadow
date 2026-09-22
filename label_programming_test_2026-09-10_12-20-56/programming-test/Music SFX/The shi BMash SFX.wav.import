@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://blculglysi5gf"
-path="res://.godot/imported/The shi BMash SFX.wav-407025fb296d67016b7e684df8a24418.sample"
+path="res://.godot/imported/The shi BMash SFX.wav-daab329901d559ec9601d0b3d9c9f4f6.sample"
 
 [deps]
 
-source_file="res://SFX/The shi BMash SFX.wav"
-dest_files=["res://.godot/imported/The shi BMash SFX.wav-407025fb296d67016b7e684df8a24418.sample"]
+source_file="res://Music SFX/The shi BMash SFX.wav"
+dest_files=["res://.godot/imported/The shi BMash SFX.wav-daab329901d559ec9601d0b3d9c9f4f6.sample"]
 
 [params]
 

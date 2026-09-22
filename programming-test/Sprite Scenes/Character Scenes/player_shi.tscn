@@ -1,0 +1,150 @@
+[gd_scene format=3 uid="uid://wfpeeckwttyo"]
+
+[ext_resource type="Texture2D" uid="uid://svv7uy4qx6k0" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Jump.png" id="1_h1efr"]
+[ext_resource type="Script" uid="uid://1ykv4m4542kf" path="res://Scripts/player_shi.gd" id="1_jei3d"]
+[ext_resource type="Texture2D" uid="uid://dt221xxnyl3nm" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Down_1.png" id="1_jquik"]
+[ext_resource type="Texture2D" uid="uid://cos0t6axlynb2" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Down_2.png" id="2_jei3d"]
+[ext_resource type="Texture2D" uid="uid://bnepfxno7klmb" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Idle_1.png" id="2_mnxtq"]
+[ext_resource type="Texture2D" uid="uid://ckj38od47tb8e" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Down_Left_1.png" id="3_5fe1o"]
+[ext_resource type="Texture2D" uid="uid://dkd58efrynye3" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Down_Left_2.png" id="4_gj5wa"]
+[ext_resource type="Texture2D" uid="uid://csy0pdpiujf3a" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Down_Right_1.png" id="5_8g3rh"]
+[ext_resource type="Texture2D" uid="uid://wiecf1mkp1of" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Down_Right_2.png" id="6_mtggg"]
+[ext_resource type="Texture2D" uid="uid://b46ija0xu866q" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Left_1.png" id="8_qoi63"]
+[ext_resource type="Texture2D" uid="uid://crf2fhgtct2jd" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Left_2.png" id="9_pbvfc"]
+[ext_resource type="Texture2D" uid="uid://rfk5d6bqc04q" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Right_1.png" id="11_6ga0d"]
+[ext_resource type="Texture2D" uid="uid://30642vi0ooqs" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Right_2.png" id="12_rk7yx"]
+[ext_resource type="Texture2D" uid="uid://brmr1gky5vfhc" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Up_1.png" id="13_6id5m"]
+[ext_resource type="Texture2D" uid="uid://d0e3ns6ojbx0v" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Up_2.png" id="14_5cvyt"]
+[ext_resource type="Texture2D" uid="uid://dlrsgv0oheh0d" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Up_Left_1.png" id="15_q4unh"]
+[ext_resource type="Texture2D" uid="uid://feufibg8ae2r" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Up_Left_2.png" id="16_0e6yu"]
+[ext_resource type="Texture2D" uid="uid://c283q3vlan0t6" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Up_Right_1.png" id="17_qyc1r"]
+[ext_resource type="Texture2D" uid="uid://bj3efshoj3wr0" path="res://Sprites Assets/Character_Sprites/Thre-Shi Sprites/Up_Right_2.png" id="18_7s0ng"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bpnkt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jquik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jei3d")
+}],
+"loop": true,
+"name": &"down",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_5fe1o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gj5wa")
+}],
+"loop": true,
+"name": &"down_left",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_8g3rh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mtggg")
+}],
+"loop": true,
+"name": &"down_right",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_h1efr")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_qoi63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pbvfc")
+}],
+"loop": true,
+"name": &"left",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mnxtq")
+}],
+"loop": true,
+"name": &"normal",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_6ga0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rk7yx")
+}],
+"loop": true,
+"name": &"right",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_6id5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5cvyt")
+}],
+"loop": true,
+"name": &"up",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_q4unh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0e6yu")
+}],
+"loop": true,
+"name": &"up_left",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_qyc1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7s0ng")
+}],
+"loop": true,
+"name": &"up_right",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mnxtq"]
+size = Vector2(640, 632)
+
+[node name="player_shi" type="CharacterBody2D" unique_id=1639584573]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_jei3d")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2125735761]
+scale = Vector2(0.4, 0.4)
+sprite_frames = SubResource("SpriteFrames_bpnkt")
+animation = &"jump"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1772844881]
+position = Vector2(0, 36)
+scale = Vector2(0.25, 0.25)
+shape = SubResource("RectangleShape2D_mnxtq")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1590379476]
+zoom = Vector2(1.3, 1.3)
+limit_smoothed = true
+position_smoothing_speed = 24.0

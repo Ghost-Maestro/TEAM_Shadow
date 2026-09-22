@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://s65p1qqni3ua"]
+
+[ext_resource type="Script" uid="uid://dswx85u1dn88o" path="res://Scripts/Button.gd" id="1_il234"]
+[ext_resource type="PackedScene" uid="uid://ceqnwwi07qa7v" path="res://Sprite Scenes/y_button.tscn" id="2_4odfi"]
+[ext_resource type="Texture2D" uid="uid://d0jirgrlhfdck" path="res://Sprites Assets/User Interface/Button Prompts.png" id="3_4odfi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2yge"]
+atlas = ExtResource("3_4odfi")
+region = Rect2(400, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bvp3"]
+atlas = ExtResource("3_4odfi")
+region = Rect2(600, 0, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4odfi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2yge")
+}],
+"loop": true,
+"name": &"Normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bvp3")
+}],
+"loop": false,
+"name": &"Pressed",
+"speed": 12.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8mrf"]
+atlas = ExtResource("3_4odfi")
+region = Rect2(400, 200, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xi510"]
+atlas = ExtResource("3_4odfi")
+region = Rect2(600, 200, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xi510"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8mrf")
+}],
+"loop": true,
+"name": &"Normal",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xi510")
+}],
+"loop": false,
+"name": &"Pressed",
+"speed": 12.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4odfi"]
+atlas = ExtResource("3_4odfi")
+region = Rect2(400, 400, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okq13"]
+atlas = ExtResource("3_4odfi")
+region = Rect2(600, 400, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qn73e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4odfi")
+}],
+"loop": true,
+"name": &"Normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okq13")
+}],
+"loop": false,
+"name": &"Pressed",
+"speed": 12.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_og20u"]
+atlas = ExtResource("3_4odfi")
+region = Rect2(400, 600, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ie7vy"]
+atlas = ExtResource("3_4odfi")
+region = Rect2(600, 600, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j4i1k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_og20u")
+}],
+"loop": true,
+"name": &"Normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ie7vy")
+}],
+"loop": true,
+"name": &"Pressed",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=577021776]
+script = ExtResource("1_il234")
+
+[node name="y_button" parent="." unique_id=112362989 instance=ExtResource("2_4odfi")]
+position = Vector2(138, 870)
+sprite_frames = SubResource("SpriteFrames_4odfi")
+animation = &"Pressed"
+
+[node name="b_button" parent="." unique_id=1895664823 instance=ExtResource("2_4odfi")]
+position = Vector2(342, 870)
+sprite_frames = SubResource("SpriteFrames_xi510")
+animation = &"Pressed"
+
+[node name="a_button" type="AnimatedSprite2D" parent="." unique_id=2099559998]
+position = Vector2(549, 867)
+sprite_frames = SubResource("SpriteFrames_qn73e")
+animation = &"Pressed"
+
+[node name="x_button" type="AnimatedSprite2D" parent="." unique_id=1420183722]
+position = Vector2(771, 869)
+sprite_frames = SubResource("SpriteFrames_j4i1k")
+animation = &"Pressed"

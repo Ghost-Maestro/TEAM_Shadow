@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://bmwlruoy2ivl8"
-path="res://.godot/imported/Addy SFX.wav-843f2c158df5539186f952acd4817d70.sample"
+uid="uid://mn0awr7ve3ke"
+path="res://.godot/imported/Jingle.wav-ca00dbf12e3493c347d063302bba4375.sample"
 
 [deps]
 
-source_file="res://SFX/Addy SFX.wav"
-dest_files=["res://.godot/imported/Addy SFX.wav-843f2c158df5539186f952acd4817d70.sample"]
+source_file="res://Music SFX/Jingle.wav"
+dest_files=["res://.godot/imported/Jingle.wav-ca00dbf12e3493c347d063302bba4375.sample"]
 
 [params]
 
