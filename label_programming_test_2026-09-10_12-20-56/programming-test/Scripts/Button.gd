@@ -21,13 +21,20 @@ func _input(event):
 		_y_button.play("Pressed")
 		print("Thre-Shi Jump")
 	
+		
+	
 	if event.is_action_pressed("b_button"):
 		_b_button.play("Pressed")
 		print("Add-E-Quint Jump")
+		$Add_EBMash.play()
+		await $Add_EBMash.finished
+		
 	
 	if event.is_action_pressed("a_button"):
 		_a_button.play("Pressed")
 		print("Ex-El Jump")
+		$EX_NLBMash.play()
+		await $EX_NLBMash.finished
 	
 	
 	if event.is_action_pressed("x_button"):
