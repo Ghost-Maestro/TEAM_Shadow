@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://cqiuh0ch4jhei"]
+
+[ext_resource type="Script" uid="uid://cs7tfpgcnk5l0" path="res://scripts/battle scripts/battle_enemy_bat.gd" id="1_5jwry"]
+[ext_resource type="Texture2D" uid="uid://blhiiv711a5ss" path="res://sprite/tilemap_packed.png" id="2_ctrcb"]
+[ext_resource type="PackedScene" uid="uid://b8sbdha2cayvp" path="res://scenes/battle/bat_projectile.tscn" id="2_t71sq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_12gyt"]
+radius = 9.0
+
+[node name="BattleBat" type="Node2D" unique_id=1729853045]
+script = ExtResource("1_5jwry")
+projectile_scene = ExtResource("2_t71sq")
+
+texture = ExtResource("2_ctrcb")
+region_enabled = true
+region_rect = Rect2(0, 160, 16, 16)
+
+[node name="AttackHitbox" type="Area2D" parent="." unique_id=1598687327]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackHitbox" unique_id=1874093384]
+shape = SubResource("CircleShape2D_12gyt")
+
+[node name="HealthUI" type="Node2D" parent="." unique_id=1198779968]
+
+[node name="HealthBar" type="ProgressBar" parent="HealthUI" unique_id=1862979171]
+offset_left = 3.0
+offset_top = -21.0
+offset_right = 23.0
+offset_bottom = -14.0
+value = 1.0
+show_percentage = false
+
+[node name="NameLabel" type="Label" parent="HealthUI" unique_id=27118840]
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 5.0
+offset_bottom = 2.0
+scale = Vector2(0.657572, 0.302254)
+
+[connection signal="body_entered" from="AttackHitbox" to="." method="_on_attack_hitbox_body_entered"]

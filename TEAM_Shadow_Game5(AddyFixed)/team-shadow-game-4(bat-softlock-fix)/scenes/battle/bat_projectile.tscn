@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b8sbdha2cayvp"]
+
+[ext_resource type="Script" uid="uid://brxynldm3a004" path="res://scripts/battle scripts/bat_projectile.gd" id="1_hq1qf"]
+[ext_resource type="Texture2D" uid="uid://blhiiv711a5ss" path="res://sprite/tilemap_packed.png" id="2_63khl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hq1qf"]
+
+[node name="BatProjectile" type="Area2D" unique_id=1357801460]
+script = ExtResource("1_hq1qf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=965414573]
+texture = ExtResource("2_63khl")
+region_enabled = true
+region_rect = Rect2(96, 128, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2015870962]
+shape = SubResource("CircleShape2D_hq1qf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
