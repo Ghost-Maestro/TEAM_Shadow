@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://fuouda5cbfit"]
+
+[ext_resource type="Script" uid="uid://dij4v3tm77t3p" path="res://scripts/enemy_encounter.gd" id="1_64ljb"]
+[ext_resource type="Texture2D" uid="uid://blhiiv711a5ss" path="res://sprite/tilemap_packed.png" id="1_oqaim"]
+[ext_resource type="Resource" uid="uid://coasuwgyqshx6" path="res://resources/enemies/rat.tres" id="2_vo1dg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nnxlg"]
+radius = 6.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1jaut"]
+size = Vector2(8, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hamla"]
+
+[node name="enemy_rat" type="CharacterBody2D" unique_id=898932841]
+script = ExtResource("1_64ljb")
+enemy_data = ExtResource("2_vo1dg")
+wander_distance = 130.0
+wander_speed = 125.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=378118712]
+position = Vector2(-4, -4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_oqaim")
+centered = false
+region_enabled = true
+region_rect = Rect2(64, 160, 16, 16)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=761025170]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1404628732]
+shape = SubResource("CircleShape2D_nnxlg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1260807889]
+shape = SubResource("RectangleShape2D_1jaut")
+
+[node name="WanderZone" type="Area2D" parent="." unique_id=1845727186]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WanderZone" unique_id=1876724732]
+scale = Vector2(2.7361598, 2.322654)
+shape = SubResource("RectangleShape2D_hamla")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
