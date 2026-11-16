@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://d0mqws5bjiw4f"]
+
+[ext_resource type="Texture2D" uid="uid://dti1af8yxhlqv" path="res://scenes/text box/unnamed.png" id="1_gqhwm"]
+[ext_resource type="FontFile" uid="uid://orsrkmiqm2av" path="res://scenes/text box/fonts/TTF/KNYuanmo-Regular.ttf" id="2_sp2ya"]
+
+[node name="TextBox" type="Node2D" unique_id=1505228935]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1533835579]
+offset_right = 138.0
+offset_bottom = 130.0
+texture = ExtResource("1_gqhwm")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1847536411]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=794891768]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_sp2ya")
+vertical_alignment = 1
+
+[node name="LetterDisplayTimer" type="Timer" parent="." unique_id=1811479306]
+one_shot = true

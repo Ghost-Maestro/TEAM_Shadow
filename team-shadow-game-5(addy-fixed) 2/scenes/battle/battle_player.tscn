@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dqjc6t0eajitv"]
+
+[ext_resource type="Script" uid="uid://b2jmdxlsx1w2b" path="res://scripts/battle scripts/battle_player1.gd" id="1_ar606"]
+[ext_resource type="Texture2D" uid="uid://dr87sr2n4miej" path="res://sprite/Thre-Shi Image Demo.png" id="2_ndh0i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8luuf"]
+radius = 7.0
+height = 24.0
+
+[node name="Battle_Player" type="CharacterBody2D" unique_id=1003854261 groups=["player"]]
+script = ExtResource("1_ar606")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=954220558]
+position = Vector2(-1.63913e-06, -7)
+scale = Vector2(0.0657895, 0.0585937)
+texture = ExtResource("2_ndh0i")
+region_enabled = true
+region_rect = Rect2(48, 32, 304, 512)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=450369773]
+position = Vector2(0, -5)
+shape = SubResource("CapsuleShape2D_8luuf")
+
+[node name="HealthUI" type="Node2D" parent="." unique_id=515069642]
+
+[node name="NameLabel" type="Label" parent="HealthUI" unique_id=1816218705]
+offset_left = -32.0
+offset_top = -43.0
+offset_bottom = -20.0
+scale = Vector2(0.904573, 0.496549)
+metadata/_edit_use_anchors_ = true
+
+[node name="HealthBar" type="ProgressBar" parent="HealthUI" unique_id=1874288705]
+offset_left = -30.0
+offset_top = -29.0
+offset_right = 15.0
+offset_bottom = -24.0
+scale = Vector2(1.309, 1.22182)
+show_percentage = false
+metadata/_edit_use_anchors_ = true

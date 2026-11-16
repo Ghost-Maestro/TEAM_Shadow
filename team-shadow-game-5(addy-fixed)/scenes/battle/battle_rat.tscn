@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://d4ai8pk2kp1p5"]
+
+[ext_resource type="Script" uid="uid://dqivlhjy3js1q" path="res://scripts/battle scripts/battle_enemy_rat.gd" id="1_52tub"]
+[ext_resource type="Texture2D" uid="uid://blhiiv711a5ss" path="res://sprite/tilemap_packed.png" id="1_yixvl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6e3aa"]
+radius = 8.0
+
+[node name="BattleRat" type="Node2D" unique_id=421635092]
+script = ExtResource("1_52tub")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=493140854]
+position = Vector2(4.76837e-07, 4.76837e-07)
+scale = Vector2(0.875, 0.875)
+texture = ExtResource("1_yixvl")
+region_enabled = true
+region_rect = Rect2(64, 160, 16, 16)
+
+[node name="AttackHitbox" type="Area2D" parent="." unique_id=1143747971]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackHitbox" unique_id=1411222803]
+shape = SubResource("CircleShape2D_6e3aa")
+
+[node name="HealthUI" type="Node2D" parent="." unique_id=1592963007]
+
+[node name="NameLabel" type="Label" parent="HealthUI" unique_id=2098776889]
+offset_left = -20.0
+offset_top = -16.0
+offset_right = 6.0
+offset_bottom = 7.0
+scale = Vector2(0.657572, 0.302254)
+
+[node name="HealthBar" type="ProgressBar" parent="HealthUI" unique_id=911911629]
+offset_left = 2.0
+offset_top = -16.0
+offset_right = 22.0
+offset_bottom = -9.0
+value = 1.0
+show_percentage = false
+
+[connection signal="body_entered" from="AttackHitbox" to="." method="_on_attack_hitbox_body_entered"]

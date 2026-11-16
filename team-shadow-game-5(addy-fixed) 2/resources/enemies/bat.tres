@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://do37h332ors8r"]
+
+[ext_resource type="Script" uid="uid://c7c6g82h5amnm" path="res://scripts/enemy_data.gd" id="1_mwj80"]
+[ext_resource type="PackedScene" uid="uid://cqiuh0ch4jhei" path="res://scenes/battle/battle_bat.tscn" id="1_nghrl"]
+[ext_resource type="Texture2D" uid="uid://blhiiv711a5ss" path="res://sprite/tilemap_packed.png" id="2_x625k"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_atgmv"]
+atlas = ExtResource("2_x625k")
+region = Rect2(0, 160, 16, 16)
+
+[resource]
+script = ExtResource("1_mwj80")
+name = "Bat"
+texture = SubResource("AtlasTexture_atgmv")
+health = 20
+damage = 4
+battle_scene = ExtResource("1_nghrl")
+min_exp = 3
+max_exp = 5
+speed = 14
+is_flying = true
+flying_height = 25.0

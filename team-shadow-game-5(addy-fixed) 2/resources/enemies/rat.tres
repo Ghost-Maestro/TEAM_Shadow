@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://coasuwgyqshx6"]
+
+[ext_resource type="PackedScene" uid="uid://d4ai8pk2kp1p5" path="res://scenes/battle/battle_rat.tscn" id="1_13kgl"]
+[ext_resource type="Script" uid="uid://c7c6g82h5amnm" path="res://scripts/enemy_data.gd" id="1_qyox8"]
+[ext_resource type="Texture2D" uid="uid://blhiiv711a5ss" path="res://sprite/tilemap_packed.png" id="2_pi0mu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l16tb"]
+atlas = ExtResource("2_pi0mu")
+region = Rect2(64, 160, 16, 16)
+
+[resource]
+script = ExtResource("1_qyox8")
+name = "Rat"
+texture = SubResource("AtlasTexture_l16tb")
+health = 14
+damage = 3
+battle_scene = ExtResource("1_13kgl")
+min_exp = 3
+max_exp = 4

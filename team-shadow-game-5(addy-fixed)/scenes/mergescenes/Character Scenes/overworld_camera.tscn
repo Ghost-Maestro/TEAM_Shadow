@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://ciqof3q6jjngn"]
+
+[node name="Overworld_Camera" type="Camera2D" unique_id=694139092]
+zoom = Vector2(0.8, 0.8)
